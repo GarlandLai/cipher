@@ -14,4 +14,10 @@ var lastCap = orig.slice(length-1).toUpperCase();
 
 //alert(lastCap);
 
-alert(firstCap + noFirstLast + lastCap);
+//alert(firstCap + noFirstLast + lastCap); or
+
+var firstLastCap = firstCap + noFirstLast + lastCap;
+alert(firstLastCap);
+
+var revFirstLastCap = lastCap + noFirstLast + firstCap;
+alert(revFirstLastCap);
