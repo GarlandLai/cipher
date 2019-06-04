@@ -3,20 +3,15 @@ alert(orig);
 
 var length = orig.length;
 
-var firstLetter = orig.charAt(0).toUpperCase();
+var firstCap = orig.charAt(0).toUpperCase();
 
-alert(firstLetter);
+//alert(firstCap);
 
-var noFirst = orig.slice(1)
+var noFirstLast = orig.slice(1,length-1)
+//alert(noFirstLast);
 
-alert(noFirst);
+var lastCap = orig.slice(length-1).toUpperCase();
 
-var lastLetter = orig.chartAt(length).toUpperCase();
+//alert(lastCap);
 
-alert(lastLetter);
-
-// var capital = function(firstCap,lastCap) {
-// 	return firstCap.toUpperCase() + lastCap.toUpperCase();
-// };
-//
-// alert(capital);
+alert(firstCap + noFirstLast + lastCap);
